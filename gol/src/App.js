@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Grid from './components/Grid'
 import './App.css';
 import Control from './components/Control';
+import About from './components/About';
 
 function App() {
 
@@ -125,9 +126,14 @@ function App() {
   return (
     <>
     <h1>Conway's Game of Life</h1>
-    <p>Currently at Gen # {gen}</p>
-    <Grid isAlive={isAlive} setIsAlive={setIsAlive} color={color}/>
-    <Control setRandom={setRandom} setClear={setClear} start={start} gen={gen} setGen={setGen} setColor={setColor} color={color} setIsActive={setIsActive} isActive={isActive} />
+    <main>
+      <div>
+        <p>Currently at Gen # {gen}</p>
+        <Grid isAlive={isAlive} setIsAlive={setIsAlive} color={color}/>
+        <Control setRandom={setRandom} setClear={setClear} start={start} gen={gen} setGen={setGen} setColor={setColor} color={color} setIsActive={setIsActive} isActive={isActive} />
+      </div>
+      <About />
+    </main>
     </>
   );
 }
