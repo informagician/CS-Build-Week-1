@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.grid {
+  height: 426px;
+  width: 425px;
+  /* border: 1px solid grey; */
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-left: 1px;
+}
+
+.cell {
+  height: 16px;
+  width: 16px;
+  background-color: white;
+  margin-right: 1px;
+  margin-top: 1px;
+}
+
